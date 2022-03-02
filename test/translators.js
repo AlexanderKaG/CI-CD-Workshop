@@ -17,6 +17,12 @@ describe("Translators", function () {
         it("should work for simple input", function () {
             assert.strictEqual(toAllsprak("Hejsan hoppsan!"), "Hallejsan halloppsan!")
         })
+        it("should work for more simple input", function () {
+            assert.strictEqual(toAllsprak("Hejsan hoppsan!"), "Hallejsan halloppsan!")
+        })
+        it("should not work for simple input", function () {
+            assert.strictEqual(toRobber("Hejsan hoppsan!"), "Hohejojsosanon hohopoppopsosanon!")
+        })
     })
     describe("#toNormal", function () {
         it("should work for empty string", function () {
